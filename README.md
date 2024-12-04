@@ -5,7 +5,7 @@ This is the code repository for the paper [Calibrating Large Language Models Usi
 
 ## Models
 
-The 🍑 fine-tuned models are now available on [the Hugging Face hub](https://huggingface.co/collections/parameterlab/apricot-models-673d2cae40b6ff437a86f0bf) 🤗.
+The fine-tuned models are now available on [the Hugging Face hub](https://huggingface.co/collections/parameterlab/apricot-models-673d2cae40b6ff437a86f0bf) .
 
 Here’s how you can use them:
 ```python
@@ -40,13 +40,13 @@ The scripts to replicate experimental results are all given in `/experiments`.
 Before running them in sequence, make sure to generate the necessary data for both datasets and models.
 This can be done for TriviaQA by simply running
 
-    python3 run_regression_experiment.py --dataset-name trivia_qa --device cuda --num-training-steps 0 --num-in-context-samples 10 --num-steps-temperature-scaling 0
-    python3 get_openai_data.py --dataset-name trivia_qa
+    python run_regression_experiment.py --dataset-name trivia_qa --device cpu --num-training-steps 0 --num-in-context-samples 10; `
+    python get_openai_data.py --dataset-name trivia_qa; `
 
 and similary for CoQA:
 
-    python3 run_regression_experiment.py --dataset-name coqa --device cuda --num-training-steps 0 --num-in-context-samples 0 --num-steps-temperature-scaling 0
-    python3 get_openai_data.py --dataset-name coqa --num-in-context-samples 0
+    python run_regression_experiment.py --dataset-name coqa --device cpu --num-training-steps 0 --num-in-context-samples 0; `
+    python get_openai_data.py --dataset-name coqa --num-in-context-samples 0
 
 Afterwards, run the following scripts from `/experiments`:
 
