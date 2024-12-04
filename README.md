@@ -24,7 +24,7 @@ To select a different model, adjust the model name using the following pattern `
 
 The repository is simply installed by cloning the repository and installing dependencies via `pip` using Python 3.10:
 
-    git clone https://github.com/parameterlab/apricot
+    git clone https://github.com/SURYA-REDDY18/CS421-Research-Study.git
     cd apricot
     pip install -r requirements.txt
 
