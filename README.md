@@ -26,7 +26,7 @@ The repository is simply installed by cloning the repository and installing depe
 
     git clone https://github.com/parameterlab/apricot
     cd apricot
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
 
 Note that for some scripts and functionalities certain variables must be set in a `secret.py` file in the project directory or
 in the form of enviroment variables. 
